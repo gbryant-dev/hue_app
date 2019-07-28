@@ -10,13 +10,13 @@ let groups = [];
 
 class HueService {
 
-  async getLights(url) {
-    const rsp = await axios.get(`${url}/lights`);
+  async getLights() {
+    const rsp = await axios.get(`${hueUrl}/lights`);
     return rsp.data;
   };
 
-  async getGroups (url) {
-    const rsp = await axios.get(`${url}/groups`);
+  async getGroups () {
+    const rsp = await axios.get(`${hueUrl}/groups`);
     return rsp.data;
   }
 

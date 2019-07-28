@@ -2,9 +2,8 @@ version: '3'
 
 services:
   backend:
-    build: ./backend
+    build: ./app
     volumes:
-      - ./backend:/home/node/app
+      - ./app:/home/node/app
     ports:
       - 8080:8080
-
